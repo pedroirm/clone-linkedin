@@ -1,0 +1,24 @@
+import React from "react";
+import Panel from "../../Panel";
+import Skeleton from "../../Skeleton";
+import { Container } from "./styles";
+
+function LoadingFeedPost() {
+  return (
+    <Container>
+      <Panel className="no-shadow">
+        <header>
+          <Skeleton className="avatar-skeleton" />
+          <Skeleton className="row-skeleton" />
+          <Skeleton className="row-skeleton" />
+        </header>
+        <span>
+          <Skeleton className="row-skeleton" />
+          <Skeleton className="row-skeleton" />
+        </span>
+      </Panel>
+    </Container>
+  );
+}
+
+export default LoadingFeedPost;
