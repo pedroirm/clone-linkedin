@@ -22,9 +22,7 @@ const Layout: React.FC = () => {
       <MobileHeader />
       <DesktopHeader />
 
-      <span>
-        {!isLoading && <AdBanner />}
-      </span>
+      <span>{!isLoading && <AdBanner />}</span>
       <main>
         <LeftColumn isLoading={isLoading} />
         <MiddleColumn isLoading={isLoading} />
